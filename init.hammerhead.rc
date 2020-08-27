@@ -199,6 +199,10 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 1958400
     write /sys/module/msm_thermal/core_control/enabled 1
     chmod 220 /sys/devices/system/cpu/mfreq
     write /dev/cpuctl/apps/cpu.notify_on_migrate 1
@@ -238,7 +242,7 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
-    start mpdecision
+    #start mpdecision
 
 on property:sys.boot_completed=1
     # Enable Power modes
@@ -263,7 +267,7 @@ on property:sys.boot_completed=1
     write /sys/module/pm_8x60/modes/cpu1/retention/idle_enabled 1
     write /sys/module/pm_8x60/modes/cpu2/retention/idle_enabled 1
     write /sys/module/pm_8x60/modes/cpu3/retention/idle_enabled 1
-    start mpdecision
+    #start mpdecision
 
     # enable slimport detection
     write /sys/module/slimport/parameters/enable_irq 1
