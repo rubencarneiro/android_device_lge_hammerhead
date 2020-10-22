@@ -19,9 +19,5 @@
 
 #define BTA_DISABLE_DELAY 100 /* in milliseconds */
 
-#define BLE_VND_INCLUDED TRUE
 #define BTM_BLE_ADV_TX_POWER {-21, -15, -7, 1, 9}
-
-/* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
-#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
 #endif
