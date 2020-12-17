@@ -140,6 +140,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ubuntu.widi.supported=1 \
     ro.build.vanilla.abi=1
 
+# Custom Off Charging images
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service \
     libwpa_client \
