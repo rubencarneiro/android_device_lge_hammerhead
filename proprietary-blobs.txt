@@ -37,7 +37,7 @@ bin/rmt_storage
 bin/sensors.qcom
 bin/subsystem_ramdump
 bin/thermal-engine-hh
-bin/time_daemon
+bin/time_daemon|e5fe186973b90715ab9a045d4dcd63d0134e2e63
 bin/usbhub
 bin/usbhub_init
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -59,7 +59,6 @@ etc/sensor_def_hh.conf
 framework/qcrilhook.jar
 framework/serviceitems.jar
 lib/hw/flp.msm8974.so
-lib/hw/gps.msm8974.so
 lib/libadsprpc.so
 lib/libchromatix_imx179_common.so
 lib/libchromatix_imx179_default_video.so
@@ -72,10 +71,7 @@ lib/libchromatix_mt9m114b_snapshot.so
 lib/libdrmdiag.so
 lib/libdrmfs.so
 lib/libdrmtime.so
-lib/libgps.utils.so
 lib/libI420colorconvert.so
-lib/libloc_core.so
-lib/libloc_eng.so
 lib/libmm-abl.so
 lib/libmmcamera_hdr_lib.so
 lib/libmmcamera_image_stab.so
@@ -110,7 +106,6 @@ vendor/firmware/adsp.b12
 vendor/firmware/adsp.mdt
 vendor/firmware/bcm2079x-b5_firmware.ncd
 vendor/firmware/bcm2079x-b5_pre_firmware.ncd
-vendor/firmware/bcm4335c0.hcd
 vendor/firmware/bu24205_LGIT_VER_2_DATA1.bin
 vendor/firmware/bu24205_LGIT_VER_2_DATA2.bin
 vendor/firmware/bu24205_LGIT_VER_2_DATA3.bin
@@ -144,7 +139,6 @@ vendor/firmware/widevine.b01
 vendor/firmware/widevine.b02
 vendor/firmware/widevine.b03
 vendor/firmware/widevine.mdt
-vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -166,12 +160,11 @@ vendor/lib/libCB.so
 vendor/lib/libCommandSvc.so
 vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
-vendor/lib/libdrmdecrypt.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libDxHdcp.so
 vendor/lib/libFuzzmmstillomxenc.so
-vendor/lib/libfrsdk.so
+vendor/lib/libfrsdk.so|bc4c77b62f30daabac984d4f7deb65e6c260da85
 vendor/lib/libgeofence.so
 vendor/lib/libgsl.so
 vendor/lib/libidl.so
@@ -232,11 +225,7 @@ vendor/lib/libvss_common_iface.so
 vendor/lib/libvss_nv_core.so
 vendor/lib/libvss_nv_idl.so
 vendor/lib/libvss_nv_iface.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
-vendor/lib/libWVphoneAPI.so
-vendor/lib/libWVStreamControlAPI_L1.so
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
