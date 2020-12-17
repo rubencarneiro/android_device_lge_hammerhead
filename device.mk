@@ -111,6 +111,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/permissions/privapp-permissions-hammerhead.xml:system/etc/permissions/privapp-permissions-hammerhead.xml
 
+#Ubuntu Touch: USB port handling
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/usb/setupusb:system/bin/setupusb \
+    $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
